@@ -1,0 +1,504 @@
+{
+  "settings": {
+    "cache_size_50":"۵۰ مگابایت",
+    "cache_size_100": "۱۰۰ مگابایت",
+    "cache_size_250":"۲۵۰ مگابایت",
+    "cache_size_500": "۵۰۰ مگابایت",
+    "cache_size_1000":"۱ گیگابایت",
+    "language": "زبان",
+    "language_desc": "زبان مورد نظر خود را انتخاب کنید",
+    "notifications": "اعلان‌ها",
+    "notifications_desc": "نحوه دریافت اعلان‌ها را تنظیم کنید",
+    "desktop_notifications": "اعلان دسکتاپ",
+    "desktop_notifications_desc": "نمایش اعلان‌ها روی دسکتاپ",
+    "startup_title": "رفتار هنگام شروع",
+    "startup_desc": "انتخاب کنید هنگام شروع برنامه چه اتفاقی بیفتد",
+    "startup_new": "شروع با جلسه جدید",
+    "startup_restore": "بازیابی آخرین جلسه",
+    "startup_welcome": "نمایش صفحه خوش‌آمدگویی",
+    "reset_defaults": "بازنشانی به پیش‌فرض‌ها",
+    "cancel": "انصراف",
+    "save_changes": "ذخیره تغییرات",
+    "auto_save": "ذخیره خودکار",
+    "auto_save_title": "ذخیره خودکار فعال باشد؟",
+    "auto_save_desc": "در صورت فعال بودن، تغییرات به صورت خودکار ذخیره می‌شوند.",
+    "auto_save_hint": "ذخیره خودکار می‌تواند از دست رفتن داده‌ها جلوگیری کند.",
+    "notifications_sound": "صدای اعلان",
+    "notifications_sound_desc": "پخش صدا هنگام دریافت اعلان",
+    "notifications_email": "اعلان ایمیلی",
+    "notifications_email_desc": "ارسال اعلان به ایمیل شما",
+    "startup_behavior": "رفتار شروع",
+    "startup_behavior_desc": "انتخاب رفتار برنامه هنگام اجرا",
+    "loading": "در حال بارگذاری...",
+    "debug_settings": "تنظیمات اشکال‌زدایی",
+    "debug_settings_desc": "گزینه‌های اشکال‌زدایی و ثبت گزارش برای رفع اشکال را پیکربندی کنید.",
+    "enable_debug_mode": "فعال‌سازی حالت اشکال‌زدایی",
+    "enable_debug_mode_desc": "نمایش اطلاعات اشکال‌زدایی دقیق",
+    "log_level": "سطح گزارش",
+    "show_network_requests": "نمایش درخواست‌های شبکه",
+    "show_network_requests_desc": "ثبت همه درخواست‌ها و پاسخ‌های API",
+    "show_performance_metrics": "نمایش شاخص‌های عملکرد",
+    "show_performance_metrics_desc": "نمایش زمان پاسخ و مصرف منابع",
+    "performance_settings": "تنظیمات عملکرد",
+    "performance_settings_desc": "بهینه‌سازی عملکرد برنامه و مصرف منابع.",
+    "enable_caching": "فعال‌سازی کش",
+    "enable_caching_desc": "ذخیره پاسخ‌ها برای بهبود عملکرد",
+    "cache_size": "اندازه کش",
+    "clear_cache": "پاک‌سازی کش",
+    "preload_models": "پیش‌بارگذاری مدل‌ها",
+    "preload_models_desc": "بارگذاری مدل‌های پرکاربرد هنگام شروع",
+    "optimize_memory_usage": "بهینه‌سازی مصرف حافظه",
+    "optimize_memory_usage_desc": "مدیریت خودکار تخصیص حافظه",
+    "gpu_acceleration": "شتاب‌دهی GPU",
+    "gpu_acceleration_desc": "استفاده از GPU برای پردازش سریع‌تر (آزمایشی)",
+    "experimental_features": "امکانات آزمایشی",
+    "experimental_warning": "این امکانات آزمایشی هستند و ممکن است ناپایدار باشند. با احتیاط استفاده کنید.",
+    "beta_features": "امکانات بتا",
+    "beta_features_desc": "دسترسی به قابلیت‌های بتا را فعال کنید",
+    "advanced_prompting": "پرومپتینگ پیشرفته",
+    "advanced_prompting_desc": "ابزارهای پیشرفته مهندسی پرومپت",
+    "multi_modal_support": "پشتیبانی چندحالته",
+    "multi_modal_support_desc": "پردازش تصویر، صوت و ویدیو",
+    "voice_interaction": "تعامل صوتی",
+    "voice_interaction_desc": "تبدیل گفتار به متن و بالعکس",
+    "security_settings": "تنظیمات امنیتی",
+    "enable_telemetry": "فعال‌سازی تله‌متری",
+    "enable_telemetry_desc": "ارسال داده‌های ناشناس برای بهبود برنامه",
+    "allow_remote_connections": "اجازه اتصال از راه دور",
+    "allow_remote_connections_desc": "پذیرش اتصال از دستگاه‌های دیگر",
+    "require_authentication": "نیاز به احراز هویت",
+    "require_authentication_desc": "نیاز به ورود برای دسترسی به برنامه",
+    "encrypt_local_data": "رمزنگاری داده‌های محلی",
+    "encrypt_local_data_desc": "رمزنگاری گفتگوها و فایل‌های ذخیره‌شده",
+    "configuration_management": "مدیریت پیکربندی",
+    "export_configuration": "خروجی گرفتن از تنظیمات",
+    "export_configuration_desc": "تنظیمات فعلی خود را به صورت فایل JSON برای پشتیبان‌گیری یا اشتراک دانلود کنید.",
+    "export_settings": "خروجی تنظیمات",
+    "import_configuration": "ورود پیکربندی",
+    "import_configuration_desc": "یک فایل پیکربندی را برای بازیابی تنظیمات بارگذاری کنید.",
+    "import_settings": "ورود تنظیمات",
+    "import_placeholder": "پیکربندی JSON را اینجا جای‌گذاری کنید...",
+    "log_level_error"    : "خطا (فقط خطاهای بحرانی)",
+    "log_level_warn"     :"هشدار (خطاها و هشدارها)",
+    "log_level_info"     :"اطلاعات (اطلاعات عمومی)",
+    "log_level_debug"    :"اشکال‌زدایی (اطلاعات دقیق)",
+    "log_level_trace"    :"ردیابی (تمام فعالیت‌های سیستم)",
+  
+
+    "log_level_error_desc": "فقط خطاهای بحرانی و مهم ثبت می‌شوند.",
+    "log_level_warn_desc": "خطاها و هشدارهای مهم ثبت می‌شوند.",
+    "log_level_info_desc": "اطلاعات عمومی و رویدادهای معمول ثبت می‌شوند.",
+    "log_level_debug_desc": "جزئیات اشکال‌زدایی و اطلاعات فنی ثبت می‌شود.",
+    "log_level_trace_desc": "تمام فعالیت‌ها و ردیابی کامل سیستم ثبت می‌شود."
+
+    
+  },
+  "log_levels_info": {
+    "error": "خطا (فقط خطاهای بحرانی)",
+    "warn": "هشدار (خطاها و هشدارها)",
+    "info": "اطلاعات (اطلاعات عمومی)",
+    "debug": "اشکال‌زدایی (اطلاعات دقیق)",
+    "trace": "ردیابی (تمام فعالیت‌های سیستم)"
+  },
+  "cache_sizes": {
+    "50": "۵۰ مگابایت",
+    "100": "۱۰۰ مگابایت",
+    "250": "۲۵۰ مگابایت",
+    "500": "۵۰۰ مگابایت",
+    "1000": "۱ گیگابایت"
+  },
+
+  "connection": {
+    "apiKeys": {
+      "title": "کلیدهای API",
+      "desc": "کلیدهای API را برای ارائه‌دهندگان مختلف AI پیکربندی کنید. کلیدها به صورت امن و رمزنگاری‌شده ذخیره می‌شوند.",
+      "test": "تست",
+      "secure": "کلید API به صورت رمزنگاری‌شده و امن ذخیره شده است.",
+      "errors": {
+        "openai": "کلید OpenAI نامعتبر است.",
+        "anthropic": "کلید Anthropic نامعتبر است.",
+        "google": "کلید Google نامعتبر است.",
+        "huggingface": "کلید Hugging Face نامعتبر است."
+      }
+    },
+    "apiProviders": {
+      "openai": {
+        "name": "OpenAI",
+        "description": "مدل‌های GPT-4، GPT-3.5 و سایر مدل‌های OpenAI"
+      },
+      "anthropic": {
+        "name": "Anthropic",
+        "description": "Claude 3 و سایر مدل‌های Anthropic"
+      },
+      "google": {
+        "name": "Google AI",
+        "description": "Gemini Pro و سایر مدل‌های Google"
+      },
+      "huggingface": {
+        "name": "Hugging Face",
+        "description": "مدل‌های متن‌باز و API استنتاج"
+      },
+      "test": {
+        "success": "✅ اتصال {{provider}} موفقیت‌آمیز بود!",
+        "fail": "❌ اتصال {{provider}} ناموفق بود. لطفاً کلید API را بررسی کنید."
+      }
+    },
+    "status": {
+      "connected": "متصل",
+      "disconnected": "قطع ارتباط"
+    },
+    "webhooks": {
+      "title": "وب‌هوک‌ها",
+      "desc": "وب‌هوک‌ها را برای دریافت اعلان درباره تعاملات AI و رویدادهای سیستم پیکربندی کنید.",
+      "enable": "فعال‌سازی وب‌هوک‌ها",
+      "enable_desc": "ارسال درخواست HTTP برای رویدادها",
+      "url": "آدرس وب‌هوک",
+      "url_placeholder": "https://your-server.com/webhook",
+      "url_error": "آدرس وب‌هوک الزامی است.",
+      "secret": "کلید مخفی (اختیاری)",
+      "secret_placeholder": "webhook_secret_key",
+      "secret_desc": "برای اعتبارسنجی وب‌هوک با امضای HMAC استفاده می‌شود"
+    },
+    "proxy": {
+      "title": "تنظیمات پراکسی",
+      "desc": "تنظیمات پراکسی برای درخواست‌های شبکه به ارائه‌دهندگان AI را پیکربندی کنید.",
+      "enable": "استفاده از پراکسی",
+      "enable_desc": "ارسال درخواست‌ها از طریق سرور پراکسی",
+      "host": "میزبان",
+      "host_placeholder": "proxy.example.com",
+      "host_error": "میزبان الزامی است.",
+      "port": "پورت",
+      "port_placeholder": "8080",
+      "port_error": "پورت الزامی است.",
+      "username": "نام کاربری (اختیاری)",
+      "username_placeholder": "proxy_username",
+      "password": "رمز عبور (اختیاری)",
+      "password_placeholder": "proxy_password"
+    },
+    "settings": {
+      "title": "تنظیمات اتصال",
+      "timeout": "مهلت درخواست (ثانیه)",
+      "timeout_option": "{{seconds}} ثانیه",
+      "timeout_error": "مهلت درخواست الزامی است.",
+      "retryDelay": "تاخیر تلاش مجدد (میلی‌ثانیه)",
+      "retryDelay_option": "{{value, number}} میلی‌ثانیه",
+      "retryDelay_error": "تاخیر تلاش مجدد الزامی است.",
+      "maxConcurrentRequests": "حداکثر درخواست همزمان",
+      "maxConcurrentRequests_option_one": "{{count}} درخواست",
+      "maxConcurrentRequests_option_other": "{{count}} درخواست",
+      "maxConcurrentRequests_error": "حداکثر درخواست همزمان الزامی است."
+    }
+  },
+  "aiModelSettings": {
+    "sections": {
+      "modelParameters": "پارامترهای مدل",
+      "responseConfiguration": "پیکربندی پاسخ",
+      "systemPrompt": "پرومپت سیستمی",
+      "fallbackReliability": "پشتیبان و قابلیت اطمینان",
+      "preview": "پیش‌نمایش"
+    },
+    "fields": {
+      "temperature": "دمای مدل (Temperature)",
+      "maxTokens": "حداکثر توکن‌ها",
+      "topP": "Top P (نمونه‌گیری هسته‌ای)",
+      "frequencyPenalty": "جریمه تکرار (Frequency Penalty)",
+      "presencePenalty": "جریمه حضور (Presence Penalty)",
+      "responseFormat": "فرمت پاسخ",
+      "streamResponse": "نمایش پاسخ به صورت زنده",
+      "contextWindow": "پنجره زمینه (تعداد توکن)",
+      "systemPrompt": "پیام سیستمی پیش‌فرض",
+      "fallbackModel": "مدل پشتیبان",
+      "retryAttempts": "تعداد تلاش مجدد"
+    },
+    "descriptions": {
+      "temperature": "کنترل میزان تصادفی بودن پاسخ‌ها. مقادیر کمتر خروجی متمرکزتر و قطعی‌تر تولید می‌کند.",
+      "maxTokens": "حداکثر طول پاسخ تولیدشده. مقادیر بالاتر پاسخ‌های طولانی‌تر را ممکن می‌سازد.",
+      "topP": "کنترل تنوع با نمونه‌گیری هسته‌ای. مقادیر کمتر روی توکن‌های محتمل‌تر تمرکز می‌کند.",
+      "frequencyPenalty": "کاهش تکرار توکن‌ها بر اساس فراوانی آن‌ها در متن تا این لحظه.",
+      "presencePenalty": "کاهش تکرار توکن‌ها بر اساس حضور آن‌ها در متن تا این لحظه.",
+      "streamResponse": "نمایش پاسخ در حین تولید.",
+      "contextWindow": "مقدار تاریخچه گفتگو که در هر درخواست لحاظ می‌شود.",
+      "systemPrompt": "این پیام رفتار و شخصیت هوش مصنوعی را برای همه گفتگوها تعیین می‌کند.",
+      "fallbackModel": "مدلی که هنگام عدم دسترسی به مدل اصلی استفاده می‌شود.",
+      "retryAttempts": "تعداد دفعات تلاش مجدد برای درخواست‌های ناموفق."
+    },
+    "responseFormats": {
+      "markdown": {
+        "label": "Markdown",
+        "description": "متن غنی با قالب‌بندی"
+      },
+      "plain": {
+        "label": "متن ساده",
+        "description": "متن ساده بدون قالب‌بندی"
+      },
+      "json": {
+        "label": "JSON",
+        "description": "فرمت داده ساختاریافته"
+      }
+    },
+    "fallbackModels": {
+      "gpt-3.5-turbo": {
+        "label": "GPT-3.5 Turbo",
+        "provider": "OpenAI"
+      },
+      "claude-3-haiku": {
+        "label": "Claude 3 Haiku",
+        "provider": "Anthropic"
+      },
+      "gemini-pro": {
+        "label": "Gemini Pro",
+        "provider": "Google"
+      },
+      "llama-2-70b": {
+        "label": "Llama 2 70B",
+        "provider": "Meta"
+      }
+    },
+    "temperatureScale": {
+      "conservative": "محافظه‌کار (۰.۰)",
+      "balanced": "متعادل (۱.۰)",
+      "creative": "خلاقانه (۲.۰)"
+    },
+    "contextWindow": {
+      "2048": "۲٬۰۴۸ توکن",
+      "4096": "۴٬۰۹۶ توکن",
+      "8192": "۸٬۱۹۲ توکن",
+      "16384": "۱۶٬۳۸۴ توکن",
+      "32768": "۳۲٬۷۶۸ توکن"
+    },
+    "placeholders": {
+      "systemPrompt": "پرومپت سیستمی پیش‌فرض را وارد کنید..."
+    },
+    "actions": {
+      "reset": "بازنشانی به پیش‌فرض‌ها",
+      "cancel": "انصراف",
+      "save": "ذخیره تغییرات"
+    },
+    "preview": {
+      "sample": "نمونه پاسخ با تنظیمات فعلی:",
+      "text": "بر اساس تنظیمات فعلی شما:\n- <strong>دمای مدل</strong>: {{temperature}} ({{temperatureType}})\n- <strong>حداکثر توکن</strong>: {{maxTokens}} توکن\n- <strong>سبک پاسخ</strong>: {{responseStyle}}\n\nاین پیکربندی پاسخ‌های {{responseType}} تولید خواهد کرد.",
+      "temperatureType": {
+        "conservative": "محافظه‌کار",
+        "balanced": "متعادل",
+        "creative": "خلاقانه"
+      },
+      "responseStyle": {
+        "markdown": "قالب‌بندی غنی با <strong>بولد</strong>، <em>ایتالیک</em> و بلوک کد",
+        "plain": "متن ساده بدون قالب‌بندی",
+        "json": "داده ساختاریافته JSON"
+      },
+      "responseType": {
+        "consistent": "متمرکز و منسجم",
+        "varied": "متنوع و خلاقانه"
+      }
+    }
+  },
+  "interface": {
+    "sections": {
+      "typography": "تایپوگرافی",
+      "layout": "چیدمان",
+      "codeEditor": "ویرایشگر کد",
+      "accessibility": "دسترس‌پذیری",
+      "chatInterface": "رابط چت"
+    },
+    "fields": {
+      "fontSize": "اندازه فونت",
+      "fontFamily": "خانواده فونت",
+      "lineHeight": "ارتفاع خط",
+      "chatDensity": "تراکم چت",
+      "sidebarWidth": "عرض نوار کناری",
+      "showLineNumbers": "نمایش شماره خطوط",
+      "wordWrap": "شکستن خطوط بلند",
+      "minimap": "نمای کلی کد (Minimap)",
+      "highContrast": "کنتراست بالا",
+      "reducedMotion": "کاهش حرکت",
+      "showTimestamps": "نمایش زمان پیام‌ها",
+      "showAvatars": "نمایش آواتارها",
+      "messageGrouping": "گروه‌بندی پیام‌ها",
+      "focusMode": "حالت تمرکز"
+    },
+    "fontSize": {
+      "small": "کوچک",
+      "medium": "متوسط",
+      "large": "بزرگ",
+      "extraLarge": "خیلی بزرگ"
+    },
+    "fontFamily": {
+      "inter": "Inter",
+      "system": "سیستم",
+      "mono": "JetBrains Mono",
+      "serif": "Georgia",
+      "example": "روباه قهوه‌ای سریع از روی سگ تنبل پرید"
+    },
+    "lineHeight": {
+      "compact": "فشرده",
+      "normal": "عادی",
+      "relaxed": "باز"
+    },
+    "chatDensity": {
+      "compact": { "label": "فشرده", "desc": "پیام‌های بیشتر قابل مشاهده است" },
+      "comfortable": { "label": "راحت", "desc": "فاصله‌گذاری متعادل" },
+      "spacious": { "label": "باز", "desc": "فضای تنفس بیشتر" }
+    },
+    "sidebarWidth": {
+      "narrow": { "label": "باریک" },
+      "medium": { "label": "متوسط" },
+      "wide": { "label": "عریض" }
+    },
+    "descriptions": {
+      "showLineNumbers": "نمایش شماره خطوط در بلوک‌های کد",
+      "wordWrap": "شکستن خطوط بلند در ویرایشگر کد",
+      "minimap": "نمای کلی کد را نمایش بده",
+      "highContrast": "افزایش کنتراست برای دید بهتر",
+      "reducedMotion": "کاهش انیمیشن‌ها و انتقال‌ها",
+      "showTimestamps": "نمایش زمان ارسال پیام‌ها",
+      "showAvatars": "نمایش آواتار کاربر و هوش مصنوعی",
+      "messageGrouping": "گروه‌بندی پیام‌های متوالی از یک فرستنده",
+      "focusMode": "پنهان کردن عناصر مزاحم هنگام چت"
+    }
+  },
+  "settingsPage": {
+    "title": "تنظیمات",
+    "subtitle": "پیکربندی ترجیحات استودیو هوش مصنوعی شما",
+    "menu": "منوی تنظیمات",
+    "sections": {
+      "general": {
+        "label": "عمومی",
+        "description": "پوسته، زبان و اعلان‌ها"
+      },
+      "ai-models": {
+        "label": "مدل‌های هوش مصنوعی",
+        "description": "پارامترها و رفتار مدل"
+      },
+      "interface": {
+        "label": "رابط کاربری",
+        "description": "گزینه‌های چیدمان و دسترس‌پذیری"
+      },
+      "connections": {
+        "label": "اتصالات",
+        "description": "کلیدهای API و یکپارچه‌سازی‌ها"
+      },
+      "advanced": {
+        "label": "پیشرفته",
+        "description": "تنظیمات اشکال‌زدایی و عملکرد"
+      }
+    },
+    "unsaved": {
+      "banner_title": "تغییرات ذخیره‌نشده",
+      "banner_desc": "شما تغییرات ذخیره‌نشده در این بخش دارید.",
+      "save": "ذخیره",
+      "discard": "لغو",
+      "alert": "شما تغییرات ذخیره‌نشده دارید. ابتدا آن‌ها را ذخیره یا لغو کنید.",
+      "discarded": "تغییرات لغو شد.",
+      "saved": "تنظیمات با موفقیت ذخیره شد!",
+      "error": "هنگام ذخیره تنظیمات خطایی رخ داد."
+    },
+    "alert": {
+      "success": "تنظیمات با موفقیت ذخیره شد!",
+      "error": "هنگام ذخیره تنظیمات خطایی رخ داد.",
+      "info": "اطلاعات",
+      "warning": "هشدار"
+    }
+  },
+    "chat": {
+    "history": {
+      "title": "Chat History",
+      "newChat": "New Chat",
+      "searchPlaceholder": "Search conversations..."
+    },
+    "messages": {
+      "count_one": "{{count}} message",
+      "count_other": "{{count}} messages"
+    },
+    "rightPanel": {
+      "title": "Code & Analytics"
+    }
+  },
+    "canvas": {
+    "tabs": {
+      "codeEditor": "Code Editor",
+      "analytics": "Analytics",
+      "files": "Files"
+    },
+    "files": {
+      "title": "Uploaded Files",
+      "count": "{{count}} file(s)",
+      "preview": "Preview",
+      "empty": "No files uploaded",
+      "emptyHint": "Files will appear here when uploaded"
+    },
+    "fileSize": {
+      "bytes": "Bytes",
+      "kb": "KB",
+      "mb": "MB",
+      "gb": "GB"
+    }
+  },
+  "modelSelector": {
+    "select": "انتخاب مدل",
+    "noModel": "مدلی انتخاب نشده است",
+    "available": "مدل‌های موجود",
+    "choose": "یک مدل هوش مصنوعی برای گفتگو انتخاب کنید",
+    "manage": "مدیریت مدل‌ها",
+    "aria": {
+      "select": "انتخاب مدل هوش مصنوعی"
+    },
+    "status": {
+      "available": "در دسترس",
+      "limited": "محدود",
+      "offline": "آفلاین"
+    },
+    "models": {
+      "gpt4": {
+        "name": "GPT-4",
+        "description": "قوی‌ترین مدل برای وظایف پیچیده"
+      },
+      "gpt35": {
+        "name": "GPT-3.5 Turbo",
+        "description": "سریع و بهینه برای اکثر وظایف"
+      },
+      "claude3": {
+        "name": "Claude 3",
+        "description": "عالی برای تحلیل و استدلال"
+      },
+      "gemini": {
+        "name": "Gemini Pro",
+        "description": "مدل پیشرفته زبان گوگل"
+      },
+      "llama2": {
+        "name": "Llama 2",
+        "description": "جایگزین متن‌باز"
+      }
+    }
+  },
+  "messageThread": {
+    "copy": "کپی پیام",
+    "copied": "کپی شد!",
+    "regenerate": "تولید مجدد پاسخ",
+    "like": "پسندیدن پیام",
+    "time": {
+      "justNow": "همین الان",
+      "hoursAgo": "{{count}} ساعت پیش",
+      "daysAgo": "{{count}} روز پیش"
+    }
+  },
+  "inputArea": {
+  "dropFiles": "فایل‌ها را اینجا رها کنید تا آپلود شوند",
+  "attachFile": "پیوست فایل",
+  "placeholder": "پیام خود را بنویسید... (شیفت+اینتر برای خط جدید)",
+  "send": "ارسال پیام",
+  "hint": {
+    "newLine": "شیفت + اینتر برای خط جدید",
+    "dragDrop": "کشیدن و رها کردن فایل برای پیوست"
+  },
+  "brand": "استودیو هوش مصنوعی"
+  },
+  "chatHistory": {
+    "newChatPlaceholder": "عنوانی برای چت جدید وارد کنید...",
+    "confirm": "تایید",
+    "cancel": "انصراف",
+    "delete": "حذف",
+    "empty": "گفتگویی پیدا نشد.",
+    "emptyHint": "برای شروع یک چت جدید ایجاد کنید."
+  }
+}

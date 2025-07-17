@@ -1,0 +1,401 @@
+{
+  "settings": {
+    "language": "Language",
+    "language_desc": "Select your preferred language",
+    "notifications": "Notifications",
+    "notifications_desc": "Configure how you receive notifications",
+    "notifications_desktop": "Desktop Notifications",
+    "notifications_desktop_desc": "Show notifications on your desktop",
+    "notifications_sound": "Sound Notifications",
+    "notifications_sound_desc": "Play sound for notifications",
+    "notifications_email": "Email Notifications",
+    "notifications_email_desc": "Receive important updates via email",
+    "auto_save": "Auto Save",
+    "auto_save_title": "Automatic Saving",
+    "auto_save_desc": "Automatically save your work every few minutes",
+    "auto_save_hint": "Enable to prevent data loss.",
+    "startup_behavior": "Startup Behavior",
+    "startup_behavior_desc": "Choose what happens when you start the application",
+    "startup_new": "Start with new session",
+    "startup_restore": "Restore last session",
+    "startup_welcome": "Show welcome screen",
+    "reset_defaults": "Reset to Defaults",
+    "cancel": "Cancel",
+    "save_changes": "Save Changes",
+    "loading": "Loading settings..."
+  },
+  "connection": {
+    "apiKeys": {
+      "title": "API Keys",
+      "desc": "Configure API keys for different AI providers. Keys are stored securely and encrypted.",
+      "test": "Test",
+      "secure": "API key is encrypted and stored securely",
+      "errors": {
+        "openai": "Invalid OpenAI API key.",
+        "anthropic": "Invalid Anthropic API key.",
+        "google": "Invalid Google API key.",
+        "huggingface": "Invalid Hugging Face API key."
+      }
+    },
+    "apiProviders": {
+      "openai": {
+        "name": "OpenAI",
+        "description": "GPT-4, GPT-3.5, and other OpenAI models"
+      },
+      "anthropic": {
+        "name": "Anthropic",
+        "description": "Claude 3 and other Anthropic models"
+      },
+      "google": {
+        "name": "Google AI",
+        "description": "Gemini Pro and other Google models"
+      },
+      "huggingface": {
+        "name": "Hugging Face",
+        "description": "Open source models and inference API"
+      },
+      "test": {
+        "success": "✅ {{provider}} connection successful!",
+        "fail": "❌ {{provider}} connection failed. Please check your API key."
+      }
+    },
+    "status": {
+      "connected": "connected",
+      "disconnected": "disconnected"
+    },
+    "webhooks": {
+      "title": "Webhooks",
+      "desc": "Configure webhooks to receive notifications about AI interactions and system events.",
+      "enable": "Enable Webhooks",
+      "enable_desc": "Send HTTP requests for events",
+      "url": "Webhook URL",
+      "url_placeholder": "https://your-server.com/webhook",
+      "url_error": "Webhook URL is required.",
+      "secret": "Secret Key (Optional)",
+      "secret_placeholder": "webhook_secret_key",
+      "secret_desc": "Used to verify webhook authenticity via HMAC signature"
+    },
+    "proxy": {
+      "title": "Proxy Settings",
+      "desc": "Configure proxy settings for network requests to AI providers.",
+      "enable": "Use Proxy",
+      "enable_desc": "Route requests through proxy server",
+      "host": "Host",
+      "host_placeholder": "proxy.example.com",
+      "host_error": "Host is required.",
+      "port": "Port",
+      "port_placeholder": "8080",
+      "port_error": "Port is required.",
+      "username": "Username (Optional)",
+      "username_placeholder": "proxy_username",
+      "password": "Password (Optional)",
+      "password_placeholder": "proxy_password"
+    },
+    "settings": {
+      "title": "Connection Settings",
+      "timeout": "Request Timeout (seconds)",
+      "timeout_option": "{{seconds}} seconds",
+      "timeout_error": "Timeout is required.",
+      "retryDelay": "Retry Delay (ms)",
+      "retryDelay_option": "{{value, number}} ms",
+      "retryDelay_error": "Retry delay is required.",
+      "maxConcurrentRequests": "Max Concurrent Requests",
+      "maxConcurrentRequests_option_one": "{{count}} request",
+      "maxConcurrentRequests_option_other": "{{count}} requests",
+      "maxConcurrentRequests_error": "Max concurrent requests is required."
+    }
+  },
+  "settingsPage": {
+    "title": "Settings",
+    "subtitle": "Configure your AI Studio preferences",
+    "menu": "Settings Menu",
+    "sections": {
+      "general": {
+        "label": "General",
+        "description": "Theme, language, and notifications"
+      },
+      "ai-models": {
+        "label": "AI Models",
+        "description": "Model parameters and behavior"
+      },
+      "interface": {
+        "label": "Interface",
+        "description": "Layout and accessibility options"
+      },
+      "connections": {
+        "label": "Connections",
+        "description": "API keys and integrations"
+      },
+      "advanced": {
+        "label": "Advanced",
+        "description": "Debug and performance settings"
+      }
+    },
+    "unsaved": {
+      "banner_title": "Unsaved Changes",
+      "banner_desc": "You have unsaved changes in this section.",
+      "save": "Save",
+      "discard": "Discard",
+      "alert": "You have unsaved changes. Save or discard them first.",
+      "discarded": "Changes discarded.",
+      "saved": "Settings saved successfully!",
+      "error": "An error occurred while saving settings."
+    },
+    "alert": {
+      "success": "Settings saved successfully!",
+      "error": "An error occurred while saving settings.",
+      "info": "Info",
+      "warning": "Warning"
+    }
+  },
+  "aiModelSettings": {
+    "sections": {
+      "modelParameters": "Model Parameters",
+      "responseConfiguration": "Response Configuration",
+      "systemPrompt": "System Prompt",
+      "fallbackReliability": "Fallback & Reliability",
+      "preview": "Preview"
+    },
+    "fields": {
+      "temperature": "Temperature",
+      "maxTokens": "Max Tokens",
+      "topP": "Top P (Nucleus Sampling)",
+      "frequencyPenalty": "Frequency Penalty",
+      "presencePenalty": "Presence Penalty",
+      "responseFormat": "Response Format",
+      "streamResponse": "Stream Response",
+      "contextWindow": "Context Window (tokens)",
+      "systemPrompt": "Default System Message",
+      "fallbackModel": "Fallback Model",
+      "retryAttempts": "Retry Attempts"
+    },
+    "descriptions": {
+      "temperature": "Controls randomness in responses. Lower values make output more focused and deterministic.",
+      "maxTokens": "Maximum length of the generated response. Higher values allow longer responses.",
+      "topP": "Controls diversity via nucleus sampling. Lower values focus on more probable tokens.",
+      "frequencyPenalty": "Reduces repetition of tokens based on their frequency in the text so far.",
+      "presencePenalty": "Reduces repetition of tokens based on whether they appear in the text so far.",
+      "streamResponse": "Show response as it's being generated.",
+      "contextWindow": "Amount of conversation history to include in each request.",
+      "systemPrompt": "This message sets the AI's behavior and personality for all conversations.",
+      "fallbackModel": "Model to use when the primary model is unavailable.",
+      "retryAttempts": "Number of times to retry failed requests."
+    },
+    "responseFormats": {
+      "markdown": {
+        "label": "Markdown",
+        "description": "Rich text with formatting"
+      },
+      "plain": {
+        "label": "Plain Text",
+        "description": "Simple text without formatting"
+      },
+      "json": {
+        "label": "JSON",
+        "description": "Structured data format"
+      }
+    },
+    "fallbackModels": {
+      "gpt35": {
+        "label": "GPT-3.5 Turbo",
+        "provider": "OpenAI"
+      },
+      "claude3": {
+        "label": "Claude 3 Haiku",
+        "provider": "Anthropic"
+      },
+      "gemini": {
+        "label": "Gemini Pro",
+        "provider": "Google"
+      },
+      "llama2": {
+        "label": "Llama 2 70B",
+        "provider": "Meta"
+      }
+    },
+    "temperatureScale": {
+      "conservative": "Conservative (0.0)",
+      "balanced": "Balanced (1.0)",
+      "creative": "Creative (2.0)"
+    },
+    "contextWindow": {
+      "2048": "2,048 tokens",
+      "4096": "4,096 tokens",
+      "8192": "8,192 tokens",
+      "16384": "16,384 tokens",
+      "32768": "32,768 tokens"
+    },
+    "placeholders": {
+      "systemPrompt": "Enter the default system prompt..."
+    },
+    "actions": {
+      "reset": "Reset to Defaults",
+      "cancel": "Cancel",
+      "save": "Save Changes"
+    },
+    "preview": {
+      "sample": "Sample response with current settings:",
+      "text": "Based on your current settings:\n- <strong>Temperature</strong>: {{temperature}} ({{temperatureType}})\n- <strong>Max Tokens</strong>: {{maxTokens}} tokens\n- <strong>Response Style</strong>: {{responseStyle}}\n\nThis configuration will produce {{responseType}} responses.",
+      "temperatureType": {
+        "conservative": "Conservative",
+        "balanced": "Balanced",
+        "creative": "Creative"
+      },
+      "responseStyle": {
+        "markdown": "Rich formatting with <strong>bold</strong>, <em>italic</em>, and code blocks",
+        "plain": "Simple text without formatting",
+        "json": "Structured JSON data"
+      },
+      "responseType": {
+        "consistent": "consistent and focused",
+        "varied": "varied and creative"
+      }
+    }
+  },
+  "interface": {
+    "sections": {
+      "typography": "Typography",
+      "layout": "Layout",
+      "codeEditor": "Code Editor",
+      "accessibility": "Accessibility",
+      "chatInterface": "Chat Interface"
+    },
+    "fields": {
+      "fontSize": "Font Size",
+      "fontFamily": "Font Family",
+      "lineHeight": "Line Height",
+      "chatDensity": "Chat Density",
+      "sidebarWidth": "Sidebar Width",
+      "showLineNumbers": "Show Line Numbers",
+      "wordWrap": "Word Wrap",
+      "minimap": "Minimap",
+      "highContrast": "High Contrast",
+      "reducedMotion": "Reduce Motion",
+      "showTimestamps": "Show Timestamps",
+      "showAvatars": "Show Avatars",
+      "messageGrouping": "Message Grouping",
+      "focusMode": "Focus Mode"
+    },
+    "fontSize": {
+      "small": "Small",
+      "medium": "Medium",
+      "large": "Large",
+      "extraLarge": "Extra Large"
+    },
+    "fontFamily": {
+      "inter": "Inter",
+      "system": "System",
+      "mono": "JetBrains Mono",
+      "serif": "Georgia",
+      "example": "The quick brown fox jumps"
+    },
+    "lineHeight": {
+      "compact": "Compact",
+      "normal": "Normal",
+      "relaxed": "Relaxed"
+    },
+    "chatDensity": {
+      "compact": { "label": "Compact", "desc": "More messages visible" },
+      "comfortable": { "label": "Comfortable", "desc": "Balanced spacing" },
+      "spacious": { "label": "Spacious", "desc": "Extra breathing room" }
+    },
+    "sidebarWidth": {
+      "narrow": { "label": "Narrow" },
+      "medium": { "label": "Medium" },
+      "wide": { "label": "Wide" }
+    },
+    "descriptions": {
+      "showLineNumbers": "Display line numbers in code blocks",
+      "wordWrap": "Wrap long lines in code editor",
+      "minimap": "Show code overview minimap",
+      "highContrast": "Increase contrast for better visibility",
+      "reducedMotion": "Minimize animations and transitions",
+      "showTimestamps": "Display message timestamps",
+      "showAvatars": "Display user and AI avatars",
+      "messageGrouping": "Group consecutive messages from same sender",
+      "focusMode": "Hide distracting elements during chat"
+    }
+  },
+  "chat": {
+    "history": {
+      "title": "Chat History",
+      "newChat": "New Chat",
+      "searchPlaceholder": "Search conversations..."
+    },
+    "messages": {
+      "count_one": "{{count}} message",
+      "count_other": "{{count}} messages"
+    },
+    "rightPanel": {
+      "title": "Code & Analytics"
+    }
+  },
+  "canvas": {
+    "tabs": {
+      "codeEditor": "Code Editor",
+      "analytics": "Analytics",
+      "files": "Files"
+    },
+    "files": {
+      "title": "Uploaded Files",
+      "count": "{{count}} file(s)",
+      "preview": "Preview",
+      "empty": "No files uploaded",
+      "emptyHint": "Files will appear here when uploaded"
+    },
+    "fileSize": {
+      "bytes": "Bytes",
+      "kb": "KB",
+      "mb": "MB",
+      "gb": "GB"
+    }
+  },
+  "modelSelector": {
+    "select": "Select Model",
+    "noModel": "No model selected",
+    "available": "Available Models",
+    "choose": "Choose an AI model for your conversation",
+    "manage": "Manage Models",
+    "aria": {
+      "select": "Select AI model"
+    },
+    "status": {
+      "available": "Available",
+      "limited": "Limited",
+      "offline": "Offline"
+    },
+    "models": {
+      "gpt4": {
+        "name": "GPT-4",
+        "description": "Most capable model for complex tasks"
+      },
+      "gpt35": {
+        "name": "GPT-3.5 Turbo",
+        "description": "Fast and efficient for most tasks"
+      },
+      "claude3": {
+        "name": "Claude 3",
+        "description": "Excellent for analysis and reasoning"
+      },
+      "gemini": {
+        "name": "Gemini Pro",
+        "description": "Google's advanced language model"
+      },
+      "llama2": {
+        "name": "Llama 2",
+        "description": "Open-source alternative"
+      }
+    }
+  },
+  "messageThread": {
+    "copy": "Copy message",
+    "copied": "Copied!",
+    "regenerate": "Regenerate response",
+    "like": "Like message",
+    "time": {
+      "justNow": "Just now",
+      "hoursAgo": "{{count}}h ago",
+      "daysAgo": "{{count}}d ago"
+    }
+  }
+}

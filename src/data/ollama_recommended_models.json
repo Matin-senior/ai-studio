@@ -1,0 +1,338 @@
+[
+  {
+    "base_id": "llama3",
+    "name": "Llama 3",
+    "base_description": "Meta's latest open-source large language model, available through Ollama for local execution. Offers strong performance across various tasks. Known for its instruct fine-tuning and coding capabilities.",
+    "thumbnail_url": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=300&fit=crop&q=80",
+    "model_page_url": "https://ollama.com/community/llama3",
+    "type": "Language Model",
+    "compatibility_tags": ["CPU", "NVIDIA CUDA", "Apple Metal"],
+    "suggested_use_cases": ["General Chat", "Coding Assistant", "Creative Writing", "Summarization"],
+    "quantizations": [
+      {
+        "tag": "8b",
+        "description": "The base 8 billion parameter model (FP16). Good for general use, offers raw performance.",
+        "size_gb": "4.7 GB",
+        "vram_gb": "8 GB",
+        "ram_gb": "8 GB",
+        "disk_space_gb": "4.7 GB",
+        "minimum_ram_gb": "8 GB",
+        "minimum_vram_gb": "6 GB"
+      },
+      {
+        "tag": "8b-instruct-q4_K_M",
+        "description": "Quantized (Q4_K_M) version of the 8B instruct model. Ideal for most users with limited VRAM, balancing performance and efficiency. Recommended.",
+        "size_gb": "4.7 GB",
+        "vram_gb": "6 GB",
+        "ram_gb": "6 GB",
+        "disk_space_gb": "4.7 GB",
+        "minimum_ram_gb": "8 GB",
+        "minimum_vram_gb": "4 GB"
+      },
+      {
+        "tag": "8b-instruct",
+        "description": "The base 8 billion parameter instruct fine-tuned model (FP16). Optimized for conversational AI.",
+        "size_gb": "4.7 GB",
+        "vram_gb": "8 GB",
+        "ram_gb": "8 GB",
+        "disk_space_gb": "4.7 GB",
+        "minimum_ram_gb": "8 GB",
+        "minimum_vram_gb": "6 GB"
+      },
+      {
+        "tag": "70b",
+        "description": "The larger 70 billion parameter model (FP16) for more complex tasks and higher quality outputs. Requires substantial hardware.",
+        "size_gb": "39.5 GB",
+        "vram_gb": "48 GB",
+        "ram_gb": "48 GB",
+        "disk_space_gb": "39.5 GB",
+        "minimum_ram_gb": "64 GB",
+        "minimum_vram_gb": "32 GB"
+      },
+      {
+        "tag": "70b-instruct-q4_K_M",
+        "description": "Quantized (Q4_K_M) version of the 70B instruct model. Balances performance and resource usage for advanced users. Good for high-end consumer GPUs.",
+        "size_gb": "39.5 GB",
+        "vram_gb": "32 GB",
+        "ram_gb": "32 GB",
+        "disk_space_gb": "39.5 GB",
+        "minimum_ram_gb": "48 GB",
+        "minimum_vram_gb": "24 GB"
+      }
+    ]
+  },
+  {
+    "base_id": "phi3",
+    "name": "Phi-3 Mini",
+    "base_description": "Microsoft's small, yet highly capable language model. Ideal for running on laptops and less powerful devices with Ollama. Balances performance with efficiency, suitable for a wide range of tasks.",
+    "thumbnail_url": "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=400&h=300&fit=crop&q=80",
+    "model_page_url": "https://ollama.com/community/phi3",
+    "type": "Language Model",
+    "compatibility_tags": ["CPU", "NVIDIA CUDA", "Apple Metal"],
+    "suggested_use_cases": ["Lightweight Chat", "Local Development", "Mobile Devices (via Ollama)"],
+    "quantizations": [
+      {
+        "tag": "3.8b-mini-4k",
+        "description": "The base 3.8 billion parameter model with a 4K context window (FP16).",
+        "size_gb": "2.3 GB",
+        "vram_gb": "4 GB",
+        "ram_gb": "4 GB",
+        "disk_space_gb": "2.3 GB",
+        "minimum_ram_gb": "6 GB",
+        "minimum_vram_gb": "3 GB"
+      },
+      {
+        "tag": "3.8b-mini-4k-q4_K_M",
+        "description": "Quantized (Q4_K_M) Phi-3 Mini 4K, designed for maximum efficiency and low resource usage. Highly recommended for laptops.",
+        "size_gb": "2.3 GB",
+        "vram_gb": "3 GB",
+        "ram_gb": "3 GB",
+        "disk_space_gb": "2.3 GB",
+        "minimum_ram_gb": "4 GB",
+        "minimum_vram_gb": "2 GB"
+      },
+      {
+        "tag": "3.8b-mini-128k",
+        "description": "Phi-3 Mini with an extended 128K context window. Great for long documents and complex conversations.",
+        "size_gb": "2.3 GB",
+        "vram_gb": "8 GB",
+        "ram_gb": "8 GB",
+        "disk_space_gb": "2.3 GB",
+        "minimum_ram_gb": "16 GB",
+        "minimum_vram_gb": "6 GB"
+      }
+    ]
+  },
+  {
+    "base_id": "mistral",
+    "name": "Mistral",
+    "base_description": "A small, yet powerful, foundational large language model from Mistral AI. Known for its strong performance and speed, particularly for its size.",
+    "thumbnail_url": "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=400&h=300&fit=crop&q=80",
+    "model_page_url": "https://ollama.com/community/mistral",
+    "type": "Language Model",
+    "compatibility_tags": ["CPU", "NVIDIA CUDA", "Apple Metal"],
+    "suggested_use_cases": ["General Purpose", "Fast Inference", "Summarization", "Code Generation"],
+    "quantizations": [
+      {
+        "tag": "7b",
+        "description": "The base 7 billion parameter model (FP16).",
+        "size_gb": "4.1 GB",
+        "vram_gb": "8 GB",
+        "ram_gb": "8 GB",
+        "disk_space_gb": "4.1 GB",
+        "minimum_ram_gb": "8 GB",
+        "minimum_vram_gb": "6 GB"
+      },
+      {
+        "tag": "7b-instruct-v0.2-q4_K_M",
+        "description": "Quantized (Q4_K_M) Mistral 7B instruct model. Highly efficient for conversational AI and common tasks, balances performance and resource usage. Recommended.",
+        "size_gb": "4.1 GB",
+        "vram_gb": "6 GB",
+        "ram_gb": "6 GB",
+        "disk_space_gb": "4.1 GB",
+        "minimum_ram_gb": "8 GB",
+        "minimum_vram_gb": "4 GB"
+      },
+      {
+        "tag": "7b-openorca",
+        "description": "Fine-tuned version of Mistral 7B on the OpenOrca dataset, for improved instruction following and general dialogue.",
+        "size_gb": "4.1 GB",
+        "vram_gb": "8 GB",
+        "ram_gb": "8 GB",
+        "disk_space_gb": "4.1 GB",
+        "minimum_ram_gb": "8 GB",
+        "minimum_vram_gb": "6 GB"
+      }
+    ]
+  },
+  {
+    "base_id": "gemma",
+    "name": "Gemma",
+    "base_description": "Google's lightweight and efficient open models, built from the same research and technology used to create the Gemini models. Excellent for various text generation tasks.",
+    "thumbnail_url": "https://images.unsplash.com/photo-1629904853716-9b936d52d9b2?w=400&h=300&fit=crop&q=80",
+    "model_page_url": "https://ollama.com/community/gemma",
+    "type": "Language Model",
+    "compatibility_tags": ["CPU", "NVIDIA CUDA", "Apple Metal"],
+    "suggested_use_cases": ["General Chat", "Text Generation", "Summarization", "Code Suggestions"],
+    "quantizations": [
+      {
+        "tag": "2b",
+        "description": "The base 2 billion parameter model.",
+        "size_gb": "1.4 GB",
+        "vram_gb": "4 GB",
+        "ram_gb": "4 GB",
+        "disk_space_gb": "1.4 GB",
+        "minimum_ram_gb": "4 GB",
+        "minimum_vram_gb": "2 GB"
+      },
+      {
+        "tag": "2b-q4_K_M",
+        "description": "Quantized (Q4_K_M) Gemma 2B, highly optimized for speed and low resource usage. Ideal for most devices.",
+        "size_gb": "1.4 GB",
+        "vram_gb": "3 GB",
+        "ram_gb": "3 GB",
+        "disk_space_gb": "1.4 GB",
+        "minimum_ram_gb": "4 GB",
+        "minimum_vram_gb": "2 GB"
+      },
+      {
+        "tag": "7b",
+        "description": "The larger 7 billion parameter model.",
+        "size_gb": "4.8 GB",
+        "vram_gb": "8 GB",
+        "ram_gb": "8 GB",
+        "disk_space_gb": "4.8 GB",
+        "minimum_ram_gb": "8 GB",
+        "minimum_vram_gb": "6 GB"
+      },
+      {
+        "tag": "7b-q4_K_M",
+        "description": "Quantized (Q4_K_M) Gemma 7B, balancing performance and efficiency.",
+        "size_gb": "4.8 GB",
+        "vram_gb": "6 GB",
+        "ram_gb": "6 GB",
+        "disk_space_gb": "4.8 GB",
+        "minimum_ram_gb": "8 GB",
+        "minimum_vram_gb": "4 GB"
+      }
+    ]
+  },
+  {
+    "base_id": "codellama",
+    "name": "Code Llama",
+    "base_description": "A family of open-source large language models from Meta, designed for code generation and understanding. Excellent for developers.",
+    "thumbnail_url": "https://images.unsplash.com/photo-1628155930500-d63ef2f84050?w=400&h=300&fit=crop&q=80",
+    "model_page_url": "https://ollama.com/community/codellama",
+    "type": "Code Generation",
+    "compatibility_tags": ["CPU", "NVIDIA CUDA", "Apple Metal"],
+    "suggested_use_cases": ["Code Completion", "Code Generation", "Debugging", "Code Explanation"],
+    "quantizations": [
+      {
+        "tag": "7b",
+        "description": "The base 7 billion parameter model for code tasks.",
+        "size_gb": "3.8 GB",
+        "vram_gb": "8 GB",
+        "ram_gb": "8 GB",
+        "disk_space_gb": "3.8 GB",
+        "minimum_ram_gb": "8 GB",
+        "minimum_vram_gb": "6 GB"
+      },
+      {
+        "tag": "7b-instruct",
+        "description": "Instruct-tuned Code Llama 7B for better adherence to coding instructions.",
+        "size_gb": "3.8 GB",
+        "vram_gb": "8 GB",
+        "ram_gb": "8 GB",
+        "disk_space_gb": "3.8 GB",
+        "minimum_ram_gb": "8 GB",
+        "minimum_vram_gb": "6 GB"
+      },
+      {
+        "tag": "13b-instruct-q4_K_M",
+        "description": "Quantized (Q4_K_M) Code Llama 13B instruct model, offering a good balance for more complex code tasks.",
+        "size_gb": "7.5 GB",
+        "vram_gb": "12 GB",
+        "ram_gb": "12 GB",
+        "disk_space_gb": "7.5 GB",
+        "minimum_ram_gb": "16 GB",
+        "minimum_vram_gb": "8 GB"
+      }
+    ]
+  },
+  {
+    "base_id": "nous-hermes2",
+    "name": "Nous Hermes 2",
+    "base_description": "A fine-tuned model based on Mistral, known for its strong instruction following and general conversational capabilities. Popular in the open-source community.",
+    "thumbnail_url": "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=400&h=300&fit=crop&q=80",
+    "model_page_url": "https://ollama.com/community/nous-hermes2",
+    "type": "Language Model",
+    "compatibility_tags": ["CPU", "NVIDIA CUDA", "Apple Metal"],
+    "suggested_use_cases": ["General Chat", "Instruction Following", "Role-playing"],
+    "quantizations": [
+      {
+        "tag": "mistral-7b-dpo",
+        "description": "Nous Hermes 2 DPO fine-tune on Mistral 7B.",
+        "size_gb": "4.1 GB",
+        "vram_gb": "8 GB",
+        "ram_gb": "8 GB",
+        "disk_space_gb": "4.1 GB",
+        "minimum_ram_gb": "8 GB",
+        "minimum_vram_gb": "6 GB"
+      },
+      {
+        "tag": "mistral-7b-dpo-q4_K_M",
+        "description": "Quantized (Q4_K_M) Nous Hermes 2 DPO, highly efficient for common tasks.",
+        "size_gb": "4.1 GB",
+        "vram_gb": "6 GB",
+        "ram_gb": "6 GB",
+        "disk_space_gb": "4.1 GB",
+        "minimum_ram_gb": "8 GB",
+        "minimum_vram_gb": "4 GB"
+      }
+    ]
+  },
+  {
+    "base_id": "wizardlm-uncensored",
+    "name": "WizardLM Uncensored",
+    "base_description": "An uncensored fine-tuned large language model. Offers more direct and unfiltered responses, suitable for specific research or creative applications.",
+    "thumbnail_url": "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=400&h=300&fit=crop&q=80",
+    "model_page_url": "https://ollama.com/community/wizardlm-uncensored",
+    "type": "Language Model",
+    "compatibility_tags": ["CPU", "NVIDIA CUDA", "Apple Metal"],
+    "suggested_use_cases": ["Creative Writing", "Role-playing (unfiltered)", "Research"],
+    "quantizations": [
+      {
+        "tag": "7b",
+        "description": "Base 7 billion parameter uncensored model.",
+        "size_gb": "4.1 GB",
+        "vram_gb": "8 GB",
+        "ram_gb": "8 GB",
+        "disk_space_gb": "4.1 GB",
+        "minimum_ram_gb": "8 GB",
+        "minimum_vram_gb": "6 GB"
+      },
+      {
+        "tag": "7b-q4_K_M",
+        "description": "Quantized (Q4_K_M) WizardLM Uncensored 7B, for efficient local deployment.",
+        "size_gb": "4.1 GB",
+        "vram_gb": "6 GB",
+        "ram_gb": "6 GB",
+        "disk_space_gb": "4.1 GB",
+        "minimum_ram_gb": "8 GB",
+        "minimum_vram_gb": "4 GB"
+      }
+    ]
+  },
+  {
+    "base_id": "neural-chat",
+    "name": "Neural Chat",
+    "base_description": "A high-performing, open-source chat model known for its strong conversational abilities and general knowledge. Built on Mistral.",
+    "thumbnail_url": "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=400&h=300&fit=crop&q=80",
+    "model_page_url": "https://ollama.com/community/neural-chat",
+    "type": "Language Model",
+    "compatibility_tags": ["CPU", "NVIDIA CUDA", "Apple Metal"],
+    "suggested_use_cases": ["General Chat", "Customer Service AI", "Instruction Following"],
+    "quantizations": [
+      {
+        "tag": "7b-v3.3",
+        "description": "The base Neural Chat 7B model.",
+        "size_gb": "4.1 GB",
+        "vram_gb": "8 GB",
+        "ram_gb": "8 GB",
+        "disk_space_gb": "4.1 GB",
+        "minimum_ram_gb": "8 GB",
+        "minimum_vram_gb": "6 GB"
+      },
+      {
+        "tag": "7b-v3.3-q4_K_M",
+        "description": "Quantized (Q4_K_M) Neural Chat 7B v3.3, highly efficient for most local setups.",
+        "size_gb": "4.1 GB",
+        "vram_gb": "6 GB",
+        "ram_gb": "6 GB",
+        "disk_space_gb": "4.1 GB",
+        "minimum_ram_gb": "8 GB",
+        "minimum_vram_gb": "4 GB"
+      }
+    ]
+  }
+]

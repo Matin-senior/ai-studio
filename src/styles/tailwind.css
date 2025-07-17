@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Estedad';
+  src: url('/fonts/Estedad-Variable.woff2'); ;
+  font-weight: 100 900;
+  font-display: swap;
+  unicode-range: U+0600-06FF, U+FB8A, U+067E, U+0686, U+06AF, U+200C, U+200F, U+061F, U+0621-063A, U+0641-064A, U+0660-0669, U+06F0-06F9;
+}
+
+@layer base {
+  :root {
+    /* Primary Colors */
+    --color-primary: #7F5AF0; /* Vivid Purple */
+    --color-primary-50: #F4F7FE; /* Very light blue-purple */
+    --color-primary-100: #E9EAFB; /* Lighter blue-purple */
+    --color-primary-500: #7F5AF0; /* Main purple */
+    --color-primary-700: #6246EA; /* Darker purple */
+    --color-primary-900: #3C1E70; /* Deep purple */
+    
+    /* Secondary Colors */
+    --color-secondary: #2CB67D; /* Energetic Green */
+    --color-secondary-50: #F0FFF4;
+    --color-secondary-100: #CFFFE3;
+    --color-secondary-200: #A7F3D0;
+    --color-secondary-300: #6EE7B7;
+    --color-secondary-400: #34D399;
+    --color-secondary-600: #059669;
+    --color-secondary-700: #047857;
+    --color-secondary-800: #065F46;
+    --color-secondary-900: #064E3B;
+
+    /* Accent Colors */
+    --color-accent: #FF8906; /* Orange accent */
+    --color-accent-50: #FFF7ED;
+    --color-accent-100: #FFEDD5;
+    --color-accent-600: #EA580C;
+    --color-accent-700: #C2410C;
+
+    /* Background Colors */
+    --color-background: #F4F7FE; /* Soft blue-gray background */
+    --color-surface: #FFFFFF; /* White surface for cards */
+    --color-surface-hover: #E9EAFB; /* Slightly blue hover */
+
+    /* Text Colors */
+    --color-text-primary: #232946; /* Deep blue-black */
+    --color-text-secondary: #72757E; /* Muted gray */
+    --color-text-tertiary: #A7A9BE; /* Light gray */
+    --color-text-inverse: #FFFFFF; /* For colored backgrounds */
+    
+    /* Status Colors */
+    --color-success: #059669; /* Success green - emerald-600 */
+    --color-success-light: #D1FAE5; /* Light success background - emerald-100 */
+    --color-warning: #D97706; /* Warning amber - amber-600 */
+    --color-warning-light: #FEF3C7; /* Light warning background - amber-100 */
+    --color-error: #DC2626; /* Error red - red-600 */
+    --color-error-light: #FEE2E2; /* Light error background - red-100 */
+    
+    /* Border Colors */
+    --color-border: #E2E8F0; /* Default border - slate-200 */
+    --color-border-light: #F1F5F9; /* Light border - slate-100 */
+    --color-border-focus: #2563EB; /* Focus border - blue-600 */
+    
+    /* Shadow Colors */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-hover: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+    --shadow-active: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+
+
+
+
+    
+  }
+  
+
+
+
+  /* بازنویسی متغیرها برای حالت تاریک (Dark Mode) */
+  .dark {
+    --color-primary: #8A8EC8; /* Professional Purple */
+    --color-primary-500: #8A8EC8;
+    --color-accent: #00B4D8; /* Retaining the nice cyan for accents */
+
+    --color-background: #191B21;      /* Softer, deep blue-gray background */
+    --color-surface: #242730;         /* Clearly defined surface for sidebars */
+    --color-surface-hover: #2E323D;   /* A subtle hover for interactive surfaces */
+    
+    --color-text-primary: #E6E6FA;    /* Soft lavender-white, easy on the eyes */
+    --color-text-secondary: #A0A4B8;  /* Muted gray for secondary text */
+    --color-text-tertiary: #6E7288;   /* Darker gray for less important text */
+    --color-text-inverse: #191B21;
+    
+    --color-border: #35394A;          /* Visible but not distracting border */
+    --color-border-focus: var(--color-primary);
+
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.15), 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+  }
+
+  /* استایل‌های پایه بدنه که از متغیرهای بالا استفاده می‌کنند */
+  body {
+    @apply bg-background text-text-primary font-sans antialiased transition-colors duration-200;
+  
+  }
+  
+   * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-text-primary font-sans antialiased;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif,antialiased ,transition-colors, duration-300;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  }
+  
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', 'Fira Code', 'Monaco', 'Cascadia Code', 'Roboto Mono', monospace;
+  }
+  
+  /* راه‌حل مشکل اسکرول‌بار به صورت سراسری */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--color-surface);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary);
+    border-radius: 20px;
+    border: 3px solid var(--color-surface);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-accent);
+  }
+}
+
+/* لایه‌های کامپوننت و یوتیلیتی */
+@layer components {
+  .nav-transition {
+    @apply transition-all duration-150 ease-out;
+  }
+  
+  .nav-hover {
+    @apply hover:bg-surface-hover hover:shadow-hover;
+  }
+  
+  .nav-active {
+    @apply bg-primary text-text-inverse shadow-active;
+  }
+  
+  .nav-focus {
+    @apply focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+  }
+  
+  .elevation-sm {
+    box-shadow: var(--shadow-sm);
+  }
+  
+  .elevation-md {
+    box-shadow: var(--shadow-md);
+  }
+  
+  .elevation-lg {
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .elevation-hover {
+    box-shadow: var(--shadow-hover);
+  }
+  
+  .elevation-active {
+    box-shadow: var(--shadow-active);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .animation-reduced {
+    @media (prefers-reduced-motion: reduce) {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+/* کل نوار بالا (navbar) قابل درگ برای جابجایی پنجره */
+.navbar-draggable {
+  -webkit-app-region: drag;
+}
+
+/* دکمه‌ها و عناصر قابل کلیک داخل navbar غیرقابل درگ (فقط کلیک‌پذیر) */
+.navbar-draggable .navbar-button {
+  -webkit-app-region: no-drag;
+}
