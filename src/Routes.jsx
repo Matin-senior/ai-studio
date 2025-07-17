@@ -1,5 +1,6 @@
 import React from "react";
-import { BrowserRouter, Routes as RouterRoutes, Route } from "react-router-dom";
+// ✅ مرحله ۱: BrowserRouter را با HashRouter جایگزین کنید
+import { HashRouter, Routes as RouterRoutes, Route } from "react-router-dom";
 import ScrollToTop from "components/ScrollToTop";
 import ErrorBoundary from "components/ErrorBoundary";
 import Header from "components/ui/Header";
@@ -11,7 +12,8 @@ import FileManagementWorkspace from "pages/file-management-workspace";
 
 const Routes = () => {
   return (
-    <BrowserRouter>
+    // ✅ مرحله ۲: اینجا هم تگ را تغییر دهید
+    <HashRouter>
       <ErrorBoundary>
         <ScrollToTop />
         <Header />
@@ -24,7 +26,7 @@ const Routes = () => {
           <Route path="/file-management-workspace" element={<FileManagementWorkspace />} />
         </RouterRoutes>
       </ErrorBoundary>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
