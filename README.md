@@ -58,7 +58,7 @@ You can test the current state of the application on your local machine.
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/Matin-senior/ai-studio/edit/main/README.md
+    git clone https://github.com/Matin-senior/ai-studio.git
     ```
 
 2.  **Navigate to the project directory:**
