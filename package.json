@@ -1,10 +1,12 @@
 {
   "name": "ai_studio",
   "version": "1.0.0",
-  "type": "git",
-    "url": "https://github.com/Matin-senior/ai-studio.git",
+
   "description": "The Revolution That Codes Itself",
   "author": "Matin",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Matin-senior/ai-studio.git"},
   "private": true,
   "main": "src-electron/electron.js",
   "dependencies": {
