@@ -58,7 +58,7 @@ You can test the current state of the application on your local machine.
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/ai-studio.git](https://github.com/YOUR_USERNAME/ai-studio.git)
+    git clone https://github.com/Matin-senior/ai-studio/edit/main/README.md
     ```
 
 2.  **Navigate to the project directory:**
@@ -103,6 +103,12 @@ Our development is planned in four distinct phases:
 
 We are at the very beginning of a long and exciting journey. Contributions of all kinds are welcome. If you are a developer, designer, AI researcher, or just someone passionate about the future of human-AI collaboration, we'd love to have you on board.
 
+
+
+
+
+Made by ❤️ 
+Matin Sanei
 Please read our `CONTRIBUTING.md` file (coming soon) and check out the issue tracker to get started.
 
 ---
