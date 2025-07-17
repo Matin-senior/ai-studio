@@ -1,113 +1,112 @@
-# React
+# AI Studio 🧠
 
-A modern React-based project utilizing the latest frontend technologies and tools for building responsive web applications.
+> The Operating System for Your Thoughts.
 
-## 🚀 Features
+[![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/YOUR_USERNAME/ai-studio)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Status](https://img.shields.io/badge/status-pre--alpha-orange)](https://github.com/YOUR_USERNAME/ai-studio)
 
-- **React 18** - React version with improved rendering and concurrent features
-- **Vite** - Lightning-fast build tool and development server
-- **Redux Toolkit** - State management with simplified Redux setup
-- **TailwindCSS** - Utility-first CSS framework with extensive customization
-- **React Router v6** - Declarative routing for React applications
-- **Data Visualization** - Integrated D3.js and Recharts for powerful data visualization
-- **Form Management** - React Hook Form for efficient form handling
-- **Animation** - Framer Motion for smooth UI animations
-- **Testing** - Jest and React Testing Library setup
+AI Studio is a local-first desktop platform designed for deep, stateful collaboration between humans and AI agents. It's built not just to be another interface for LLMs, but to become a true intellectual partner—an extension of your own mind.
 
-## 📋 Prerequisites
+---
 
-- Node.js (v14.x or higher)
-- npm or yarn
+## 🚀 The Vision: Beyond a Simple Chatbot
 
-## 🛠️ Installation
+Today's AI assistants are powerful, but they suffer from a fundamental flaw: they have no memory. They are stateless calculators, unable to maintain context, learn from past interactions, or engage in long-term reasoning. AI Studio was born to solve this problem.
 
-1. Install dependencies:
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
-   
-2. Start the development server:
-   ```bash
-   npm start
-   # or
-   yarn start
-   ```
+Our long-term vision is to implement and perfect the **Extended Context Recycling (XCR) Loop**, a novel architecture that provides AI agents with true long-term, stateful memory. By using a **Volumetric Data Model**, AI Studio will enable agents to:
 
-## 📁 Project Structure
+-   **Transcend context window limitations** of offline models.
+-   **Learn and evolve** from every interaction.
+-   **Maintain coherent, long-form reasoning** across days, weeks, and months.
+-   **Develop a genuine understanding** of you and your projects.
 
-```
-react_app/
-├── public/             # Static assets
-├── src/
-│   ├── components/     # Reusable UI components
-│   ├── pages/          # Page components
-│   ├── styles/         # Global styles and Tailwind configuration
-│   ├── App.jsx         # Main application component
-│   ├── Routes.jsx      # Application routes
-│   └── index.jsx       # Application entry point
-├── .env                # Environment variables
-├── index.html          # HTML template
-├── package.json        # Project dependencies and scripts
-├── tailwind.config.js  # Tailwind CSS configuration
-└── vite.config.js      # Vite configuration
-```
+The ultimate goal is to create a testbed for **Personal AGI**—an AI-native operating system where the AI is not just an application you run, but the core fabric of the entire user experience.
 
-## 🧩 Adding Routes
+---
 
-To add new routes to the application, update the `Routes.jsx` file:
+## ✨ Core Features (Current & Planned)
 
-```jsx
-import { useRoutes } from "react-router-dom";
-import HomePage from "pages/HomePage";
-import AboutPage from "pages/AboutPage";
+-   **Local-First AI:** Connects to and runs local LLMs via Ollama for 100% privacy and offline capability.
+-   **Multi-Model Management:** Seamlessly switch between different local models like Llama 3, Phi-3, and Mistral.
+-   **Advanced Analytics:** A built-in dashboard to monitor your AI agents' performance, accuracy, and error rates.
+-   **Extensible Platform (Planned):** A robust extension API that allows developers to build new tools, agents, and workflows on top of AI Studio.
+-   **Stateful Long-Term Memory (XCR Loop - Planned):** The core revolutionary engine that will give your AI a persistent memory.
 
-const ProjectRoutes = () => {
-  let element = useRoutes([
-    { path: "/", element: <HomePage /> },
-    { path: "/about", element: <AboutPage /> },
-    // Add more routes as needed
-  ]);
+---
 
-  return element;
-};
-```
+## 🚦 Current Status: Pre-Alpha
 
-## 🎨 Styling
+AI Studio is currently in a very early, **experimental, pre-alpha stage**.
 
-This project uses Tailwind CSS for styling. The configuration includes:
+-   **What Works:** The core UI shell (built with React/Vite/Electron) is in place. Basic, stateless connections to Ollama models are functional for simple chat.
+-   **What's in Development:** We are actively architecting and building the **Core API**, which will act as the central nervous system for the entire application and pave the way for the XCR Loop and the extension system.
 
-- Forms plugin for form styling
-- Typography plugin for text styling
-- Aspect ratio plugin for responsive elements
-- Container queries for component-specific responsive design
-- Fluid typography for responsive text
-- Animation utilities
+---
 
-## 📱 Responsive Design
+## 🛠️ Getting Started (Testing the Current Build)
 
-The app is built with responsive design using Tailwind CSS breakpoints.
+You can test the current state of the application on your local machine.
 
+### Prerequisites
 
-## 📦 Deployment
+-   [Node.js](https://nodejs.org/) (v18 or later)
+-   [Git](https://git-scm.com/)
+-   [Ollama](https://ollama.com/) installed and running with at least one model pulled (e.g., `ollama run llama3`).
 
-Build the application for production:
+### Installation & Running
 
-```bash
-npm run build
-```
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/YOUR_USERNAME/ai-studio.git](https://github.com/YOUR_USERNAME/ai-studio.git)
+    ```
 
-## 🙏 Acknowledgments
+2.  **Navigate to the project directory:**
+    ```bash
+    cd ai-studio
+    ```
 
-- Built with [Rocket.new](https://rocket.new)
-- Powered by React and Vite
-- Styled with Tailwind CSS
+3.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
 
-Built with ❤️ on Rocket.new
+4.  **Run the application in development mode:**
+    > **Note:** This is the primary command for testing the current build.
+    ```bash
+    npm run electron:start
+    ```
 
+---
 
+## 🗺️ Roadmap
 
+Our development is planned in four distinct phases:
 
-npm run electron:start
+1.  **Phase 1: The Core Application (In Progress)**
+    -   Build a stable, polished AI Studio application with a robust Core API for managing models and chats.
+    -   Initial public release.
 
+2.  **Phase 2: The Platform & Extensions**
+    -   Develop and release the `ExtensionManager` API and SDK for third-party developers.
+    -   Foster a community and build a library of useful extensions.
+
+3.  **Phase 3: XCR Loop Integration**
+    -   Implement the first version of the XCR Loop and the Volumetric Data Model to bring true memory to the agents.
+
+4.  **Phase 4: The AI OS Vision**
+    -   Use the mature platform as the foundation for building a standalone, AI-native operating system.
+
+---
+
+## 🤝 Contributing
+
+We are at the very beginning of a long and exciting journey. Contributions of all kinds are welcome. If you are a developer, designer, AI researcher, or just someone passionate about the future of human-AI collaboration, we'd love to have you on board.
+
+Please read our `CONTRIBUTING.md` file (coming soon) and check out the issue tracker to get started.
+
+---
+
+## 📄 License
+
+This project is currently under a proprietary license during its early development. A decision on a future open-source license (likely MIT) will be made before the first major public release.
